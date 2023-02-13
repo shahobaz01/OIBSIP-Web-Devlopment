@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-Landing Page</title>
+    <style type="text/css">
+        *{
+        padding: 0; margin: 0; box-sizing: border-box ;
+        background:url("Image.jpg");
+        /* background:url("1.jpg"); */
+        background-size: cover;
+        /* width: 200px;
+        height: 100vh;*/
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            /* background: white; */
+            color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+            background-image: none;
+        }
+        .menu a{
+            text-decoration: none;
+            color: crimson;
+            font-size: 20px;
+            padding: 10px 20px;
+            background-image: none;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 3px solid rgb(14, 13, 13);
+            transition: 0.4s linear;
+        }
+        .menu a:hover::before{
+            width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: bisque;
+            font-size: 20px;
+            padding: 10px 20px;
+            background-image: none;
+            background: crimson;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid black;
+            color: black;
+        }
+        .body{
+            max-width: 650px;
+            position: absolute;
+            top: 40%;
+            left: 48%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: none;
+            
+        }
+        .body span{
+            font-size: 1.65em;
+            letter-spacing: 5px;
+            background: none;
+        }
+        .body h1{
+            font-size: 2.55em;
+            background: none;
+        }
+        .body a{
+            text-decoration: none;
+            background: crimson;
+            color: azure;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+        .body a:hover{
+            background: transparent;
+            border: 1px solid black;
+        
+        }
+        .footer{
+            max-width: 650px;
+            position: absolute;
+            top: 95%;
+            left: 40%;
+            /* text-decoration-line: underline; */
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+            <nav>
+                <div class="logo">
+                    TraveL-More
+                </div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Best Places</a>
+                    <a href="#">Best Offer'S</a>
+                    <a href="#">Our Site</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="register">
+                   <a href="#"> Register N0W</a>
+                </div>
+            </nav>
+            <section class="body">
+                <span> Enjoy</span>
+                <h1> Indian Travel-Tour</h1>
+
+                <br>
+                <a href="#"> BooK U-r Trip NoW</a>               
+            </section>
+            <footer class="footer">
+                Shahobaz_ahmed @Copyright 2023
+            </footer>
+    </header>
+</body>
+</html>
